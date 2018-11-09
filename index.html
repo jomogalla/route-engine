@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>ROUTIN</title>
+        <style>
+            body,
+            button {
+                font-family: "Comic Sans MS", cursive, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/x-template" id="one">
+            <div>
+                <h2>1</h2>
+                <button @click="completeStep()">COMPLETE ME</button>
+                <br><br>
+                <router-link :to="{ name: nextStep() }">Next</router-link>
+                <div v-show="completed">I am complete</div>
+            </div>
+        </script>
+        <script type="text/x-template" id="two">
+            <div>
+                <h2>2</h2>
+                <button @click="completeStep()">COMPLETE ME</button>
+                <br><br>
+                <router-link :to="{ name: nextStep() }">Next</router-link>
+                <div v-show="completed">I am complete</div>
+            </div>
+        </script>
+        <script type="text/x-template" id="three">
+            <div>
+                <h2>3</h2>
+                <button @click="completeStep()">COMPLETE ME</button>
+                <br><br>
+                <router-link :to="{ name: nextStep() }">Next</router-link>
+                <div v-show="completed">I am complete</div>
+            </div>
+        </script>
+        <script type="text/x-template" id="four">
+            <div>
+                <h2>4</h2>
+                <button @click="completeStep()">COMPLETE ME</button>
+                <br><br>
+                <router-link :to="{ name: nextStep() }">Next</router-link>
+                <div v-show="completed">I am complete</div>
+            </div>
+        </script>
+        <script type="text/x-template" id="five">
+            <div>
+                <h2>5</h2>
+                <button @click="completeStep()">COMPLETE ME</button>
+                <br><br>
+                <router-link :to="{ name: nextStep() }">Next</router-link>
+                <div v-show="completed">I am complete</div>
+            </div>
+        </script>
+
+        <div id="app">
+            <h1>Route Engine</h1>
+            <router-view></router-view>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/3.0.1/vue-router.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
