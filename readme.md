@@ -1,3 +1,9 @@
+SETUP:
+- Open index.html in browser
+- done
+
+
+
 PROS of this system:
 - Easy to understand workflows
 - Easy to compose new workflows
